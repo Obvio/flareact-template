@@ -1,0 +1,29 @@
+{
+  "helpers": [
+    "mMY5cUVI3HsBwKJBGxlcI/_buildManifest.js"
+  ],
+  "pages": {
+    "/_app": [
+      "main.343bbe6a57ae46e102d7.js",
+      "webpack.js",
+      "framework.a87d8c9398a1503a72be.js",
+      "commons.c8563cd67c539032a53f.js",
+      "pages/_app.46aff8eae0b95d47bf65.css",
+      "pages/_app.f2c7759bc3c14ece298b.js"
+    ],
+    "/index": [
+      "main.343bbe6a57ae46e102d7.js",
+      "webpack.js",
+      "framework.a87d8c9398a1503a72be.js",
+      "commons.c8563cd67c539032a53f.js",
+      "pages/index.b272eeaa555d311922e0.js"
+    ],
+    "/posts/[slug]": [
+      "main.343bbe6a57ae46e102d7.js",
+      "webpack.js",
+      "framework.a87d8c9398a1503a72be.js",
+      "commons.c8563cd67c539032a53f.js",
+      "pages/posts/[slug].71e07845c66fbdb8562a.js"
+    ]
+  }
+}

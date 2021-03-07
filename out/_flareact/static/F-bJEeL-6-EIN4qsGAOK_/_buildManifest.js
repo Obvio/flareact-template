@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = {"/index":["pages/index.b272eeaa555d311922e0.js"],"/posts/[slug]":["pages/posts/[slug].71e07845c66fbdb8562a.js"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB();
