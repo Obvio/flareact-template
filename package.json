@@ -8,11 +8,23 @@
   "scripts": {
     "dev": "flareact dev",
     "deploy": "flareact publish",
-    "build": "flareact build"
+    "build": "flareact build",
+    "prettier": "node_modules/prettier/bin-prettier.js --write \"{pages,lib}/**/*.js\""
   },
   "dependencies": {
+    "@apollo/client": "^3.3.11",
     "flareact": "^1.1.0",
+    "graphql": "^15.5.0",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "prettier": {
+    "parser": "flow",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
   }
 }

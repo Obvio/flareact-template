@@ -1,7 +1,17 @@
-import { getPost } from "../../lib/wordpress";
-import Link from "flareact/link";
+import { getPost } from '../../lib/wordpress';
+import Link from 'flareact/link';
 
-export async function getStaticProps({ params }) {
+/*
+* params is actually
+* {
+  params: {
+    category,
+    slug,
+  }
+}
+* */
+
+export async function getEdgeProps({ params }) {
   const { slug } = params;
 
   const post = await getPost(slug);

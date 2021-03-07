@@ -1,5 +1,6 @@
-import { getPosts } from "../lib/wordpress";
-import Link from "flareact/link";
+import { getPosts } from '../lib/wordpress';
+import Link from 'flareact/link';
+import Head from 'flareact/head';
 
 export async function getEdgeProps() {
   const posts = await getPosts();
@@ -16,9 +17,12 @@ export async function getEdgeProps() {
 export default function Index({ posts = [] }) {
   return (
     <div className="container">
+      <Head>
+        <title>My page title XXX</title>
+      </Head>
       <h1>WordPress, Powered by Flareact</h1>
       <div className="posts">
-        {posts.map((post) => {
+        {posts.map(post => {
           return (
             <div key={post.id} className="post">
               <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
