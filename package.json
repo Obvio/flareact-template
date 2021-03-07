@@ -7,11 +7,10 @@
   "private": true,
   "scripts": {
     "dev": "flareact dev",
-    "deploy": "flareact publish"
+    "deploy": "flareact publish",
+    "build": "flareact build"
   },
   "dependencies": {
-    "flareact": "^1.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+
   }
 }
