@@ -10,7 +10,7 @@ export default function Index() {
     return (
         <div>
             <h1>
-                You're running React on the Edge!
+                X - You're running React on the Edge!
             </h1>
 
             {
