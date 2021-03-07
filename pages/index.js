@@ -1,22 +1,33 @@
-import React, {useEffect} from 'react'
+import { getPosts } from "../lib/wordpress";
+import Link from "flareact/link";
 
-export default function Index() {
+export async function getEdgeProps() {
+  const posts = await getPosts();
 
-    const [_res, setRes] = useState();
-    useEffect(() => {
-        fetch('https://reqres.in/api/users?page=2').then(res => res.json()).then(res => setRes(res))
-    }, [])
+  return {
+    props: {
+      posts,
+    },
+    // Revalidate every 8 hours
+    revalidate: 60 * 60 * 8,
+  };
+}
 
-    return (
-        <div>
-            <h1>
-                X2 - You're running React on the Edge!
-            </h1>
-
-            {
-                _res ?? _res.data.map(item => <div>{item.email}</div>)
-            }
-
-        </div>
-    );
+export default function Index({ posts = [] }) {
+  return (
+    <div className="container">
+      <h1>WordPress, Powered by Flareact</h1>
+      <div className="posts">
+        {posts.map((post) => {
+          return (
+            <div key={post.id} className="post">
+              <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
+                <a>{post.title.rendered}</a>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }

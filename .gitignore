@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-out/*
-!out/.gitkeep
+original/out/*
+!original/out/.gitkeep
 
 # production
 /dist/
