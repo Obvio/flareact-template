@@ -1,6 +1,6 @@
 name = "flareact-template"
 type = "webpack"
-account_id = ""
+account_id = "06033a87f7e1765b483ec12a725074d3"
 workers_dev = true
 route = ""
 zone_id = ""

@@ -9,7 +9,7 @@ export async function getEdgeProps() {
       posts,
     },
     // Revalidate every 8 hours
-    revalidate: 60 * 60 * 8,
+    //revalidate: 1, //60 * 60 * 8,
   };
 }
 
