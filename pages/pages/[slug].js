@@ -1,4 +1,4 @@
-import {getPage} from '../lib/wordpress';
+import {getPage} from '../../lib/wordpress';
 
 export async function getEdgeProps({ params }) {
     const { slug } = params;
