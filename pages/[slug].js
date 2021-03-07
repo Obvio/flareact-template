@@ -1,6 +1,4 @@
-import {getPage, getPost} from '../lib/wordpress';
-import Link from 'flareact/link';
-
+import {getPage} from '../lib/wordpress';
 
 export async function getEdgeProps({ params }) {
     const { slug } = params;
@@ -20,11 +18,8 @@ export default function Page({ post }) {
     return (
         <div className="container">
             <strong>Page.js</strong>
-            <h1>{post.title.rendered}</h1>
-            <div
-                className="body"
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-            />
+            <pre>{JSON.stringify(post)}</pre>
+            {/*<div className="body" dangerouslySetInnerHTML={{ __html: post.content.rendered }}/>*/}
         </div>
     );
 }
