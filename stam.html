@@ -3,139 +3,226 @@
 <head>
     <meta name="viewport" content="width=device-width"/>
     <meta charset="utf-8"/>
-    <title data-react-helmet="true"></title>
+    <title data-react-helmet="true">My page title XXX</title>
     <link href="/_flareact/static/pages/_app.46aff8eae0b95d47bf65.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="__flareact">
-    <div class="container"><h1>test post</h1>
-        <p><a href="/">Home</a></p>
-        <div class="body">
-            <p>name: Deploy<br>on:<br>push:<br>branches:<br>&#8211; main<br>#-
-                repository_dispatch<br>jobs:<br>deploy:<br>runs-on: ubuntu-latest<br>timeout-minutes: 10<br>steps:<br>&#8211;
-                uses: actions/checkout@v2<br>&#8211; uses: actions/setup-node@v1<br>with:<br>node-version: 12<br>&#8211;
-                run: yarn install<br>&#8211; run: yarn build<br>&#8211; name: Publish<br>uses:
-                cloudflare/wrangler-action@1.2.0<br>with:<br>apiToken: ${{ secrets.CF_API_TOKEN }}<br>env:<br>CF_ACCOUNT_ID:
-                ${{ secrets.CF_ACCOUNT_ID }}<br>IS_WORKER: true</p>
+    <div class="container"><h1>WordPress, Powered by Flareact</h1>
+        <div class="posts">
+            <div class="post"><a href="/posts/test-post">test post</a></div>
+            <div class="post"><a href="/posts/hello-world">Hello world!</a></div>
         </div>
     </div>
 </div>
 <script id="__FLAREACT_DATA" type="application/json">{
     "page": {
-        "page": "./posts/[slug].js",
-        "pagePath": "/posts/[slug]",
-        "parts": [
-            "slug"
-        ],
-        "test": {},
-        "params": {
-            "slug": "test-post"
-        }
+        "page": "./index.js",
+        "pagePath": "/index",
+        "parts": [],
+        "test": {}
     },
     "props": {
-        "post": {
-            "id": 5,
-            "date": "2021-03-07T17:14:10",
-            "date_gmt": "2021-03-07T17:14:10",
-            "guid": {
-                "rendered": "https://dev-cf-graphql.pantheonsite.io/?p=5"
+        "posts": [
+            {
+                "id": 5,
+                "date": "2021-03-07T17:14:10",
+                "date_gmt": "2021-03-07T17:14:10",
+                "guid": {
+                    "rendered": "https://dev-cf-graphql.pantheonsite.io/?p=5"
+                },
+                "modified": "2021-03-07T17:14:10",
+                "modified_gmt": "2021-03-07T17:14:10",
+                "slug": "test-post",
+                "status": "publish",
+                "type": "post",
+                "link": "https://dev-cf-graphql.pantheonsite.io/2021/03/07/test-post/",
+                "title": {
+                    "rendered": "test post"
+                },
+                "content": {
+                    "rendered": "\n\u003cp\u003ename: Deploy\u003cbr\u003eon:\u003cbr\u003epush:\u003cbr\u003ebranches:\u003cbr\u003e\u0026#8211; main\u003cbr\u003e#- repository_dispatch\u003cbr\u003ejobs:\u003cbr\u003edeploy:\u003cbr\u003eruns-on: ubuntu-latest\u003cbr\u003etimeout-minutes: 10\u003cbr\u003esteps:\u003cbr\u003e\u0026#8211; uses: actions/checkout@v2\u003cbr\u003e\u0026#8211; uses: actions/setup-node@v1\u003cbr\u003ewith:\u003cbr\u003enode-version: 12\u003cbr\u003e\u0026#8211; run: yarn install\u003cbr\u003e\u0026#8211; run: yarn build\u003cbr\u003e\u0026#8211; name: Publish\u003cbr\u003euses: cloudflare/wrangler-action@1.2.0\u003cbr\u003ewith:\u003cbr\u003eapiToken: ${{ secrets.CF_API_TOKEN }}\u003cbr\u003eenv:\u003cbr\u003eCF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}\u003cbr\u003eIS_WORKER: true\u003c/p\u003e\n",
+                    "protected": false
+                },
+                "excerpt": {
+                    "rendered": "\u003cp\u003ename: Deployon:push:branches:\u0026#8211; main#- repository_dispatchjobs:deploy:runs-on: ubuntu-latesttimeout-minutes: 10steps:\u0026#8211; uses: actions/checkout@v2\u0026#8211; uses: actions/setup-node@v1with:node-version: 12\u0026#8211; run: yarn install\u0026#8211; run: yarn build\u0026#8211; name: Publishuses: cloudflare/wrangler-action@1.2.0with:apiToken: ${{ secrets.CF_API_TOKEN }}env:CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}IS_WORKER: true\u003c/p\u003e\n",
+                    "protected": false
+                },
+                "author": 1,
+                "featured_media": 0,
+                "comment_status": "open",
+                "ping_status": "open",
+                "sticky": false,
+                "template": "",
+                "format": "standard",
+                "meta": [],
+                "categories": [
+                    1
+                ],
+                "tags": [],
+                "_links": {
+                    "self": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5"
+                        }
+                    ],
+                    "collection": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts"
+                        }
+                    ],
+                    "about": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/types/post"
+                        }
+                    ],
+                    "author": [
+                        {
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/users/1"
+                        }
+                    ],
+                    "replies": [
+                        {
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/comments?post=5"
+                        }
+                    ],
+                    "version-history": [
+                        {
+                            "count": 1,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5/revisions"
+                        }
+                    ],
+                    "predecessor-version": [
+                        {
+                            "id": 6,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5/revisions/6"
+                        }
+                    ],
+                    "wp:attachment": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/media?parent=5"
+                        }
+                    ],
+                    "wp:term": [
+                        {
+                            "taxonomy": "category",
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/categories?post=5"
+                        },
+                        {
+                            "taxonomy": "post_tag",
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/tags?post=5"
+                        }
+                    ],
+                    "curies": [
+                        {
+                            "name": "wp",
+                            "href": "https://api.w.org/{rel}",
+                            "templated": true
+                        }
+                    ]
+                }
             },
-            "modified": "2021-03-07T17:14:10",
-            "modified_gmt": "2021-03-07T17:14:10",
-            "slug": "test-post",
-            "status": "publish",
-            "type": "post",
-            "link": "https://dev-cf-graphql.pantheonsite.io/2021/03/07/test-post/",
-            "title": {
-                "rendered": "test post"
-            },
-            "content": {
-                "rendered": "\n\u003cp\u003ename: Deploy\u003cbr\u003eon:\u003cbr\u003epush:\u003cbr\u003ebranches:\u003cbr\u003e\u0026#8211; main\u003cbr\u003e#- repository_dispatch\u003cbr\u003ejobs:\u003cbr\u003edeploy:\u003cbr\u003eruns-on: ubuntu-latest\u003cbr\u003etimeout-minutes: 10\u003cbr\u003esteps:\u003cbr\u003e\u0026#8211; uses: actions/checkout@v2\u003cbr\u003e\u0026#8211; uses: actions/setup-node@v1\u003cbr\u003ewith:\u003cbr\u003enode-version: 12\u003cbr\u003e\u0026#8211; run: yarn install\u003cbr\u003e\u0026#8211; run: yarn build\u003cbr\u003e\u0026#8211; name: Publish\u003cbr\u003euses: cloudflare/wrangler-action@1.2.0\u003cbr\u003ewith:\u003cbr\u003eapiToken: ${{ secrets.CF_API_TOKEN }}\u003cbr\u003eenv:\u003cbr\u003eCF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}\u003cbr\u003eIS_WORKER: true\u003c/p\u003e\n",
-                "protected": false
-            },
-            "excerpt": {
-                "rendered": "\u003cp\u003ename: Deployon:push:branches:\u0026#8211; main#- repository_dispatchjobs:deploy:runs-on: ubuntu-latesttimeout-minutes: 10steps:\u0026#8211; uses: actions/checkout@v2\u0026#8211; uses: actions/setup-node@v1with:node-version: 12\u0026#8211; run: yarn install\u0026#8211; run: yarn build\u0026#8211; name: Publishuses: cloudflare/wrangler-action@1.2.0with:apiToken: ${{ secrets.CF_API_TOKEN }}env:CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}IS_WORKER: true\u003c/p\u003e\n",
-                "protected": false
-            },
-            "author": 1,
-            "featured_media": 0,
-            "comment_status": "open",
-            "ping_status": "open",
-            "sticky": false,
-            "template": "",
-            "format": "standard",
-            "meta": [],
-            "categories": [
-                1
-            ],
-            "tags": [],
-            "_links": {
-                "self": [
-                    {
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5"
-                    }
+            {
+                "id": 1,
+                "date": "2021-03-05T19:34:21",
+                "date_gmt": "2021-03-05T19:34:21",
+                "guid": {
+                    "rendered": "https://dev-cf-graphql.pantheonsite.io/?p=1"
+                },
+                "modified": "2021-03-05T19:34:21",
+                "modified_gmt": "2021-03-05T19:34:21",
+                "slug": "hello-world",
+                "status": "publish",
+                "type": "post",
+                "link": "https://dev-cf-graphql.pantheonsite.io/2021/03/05/hello-world/",
+                "title": {
+                    "rendered": "Hello world!"
+                },
+                "content": {
+                    "rendered": "\n\u003cp\u003eWelcome to WordPress. This is your first post. Edit or delete it, then start writing!\u003c/p\u003e\n",
+                    "protected": false
+                },
+                "excerpt": {
+                    "rendered": "\u003cp\u003eWelcome to WordPress. This is your first post. Edit or delete it, then start writing!\u003c/p\u003e\n",
+                    "protected": false
+                },
+                "author": 1,
+                "featured_media": 0,
+                "comment_status": "open",
+                "ping_status": "open",
+                "sticky": false,
+                "template": "",
+                "format": "standard",
+                "meta": [],
+                "categories": [
+                    1
                 ],
-                "collection": [
-                    {
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts"
-                    }
-                ],
-                "about": [
-                    {
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/types/post"
-                    }
-                ],
-                "author": [
-                    {
-                        "embeddable": true,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/users/1"
-                    }
-                ],
-                "replies": [
-                    {
-                        "embeddable": true,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/comments?post=5"
-                    }
-                ],
-                "version-history": [
-                    {
-                        "count": 1,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5/revisions"
-                    }
-                ],
-                "predecessor-version": [
-                    {
-                        "id": 6,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/5/revisions/6"
-                    }
-                ],
-                "wp:attachment": [
-                    {
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/media?parent=5"
-                    }
-                ],
-                "wp:term": [
-                    {
-                        "taxonomy": "category",
-                        "embeddable": true,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/categories?post=5"
-                    },
-                    {
-                        "taxonomy": "post_tag",
-                        "embeddable": true,
-                        "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/tags?post=5"
-                    }
-                ],
-                "curies": [
-                    {
-                        "name": "wp",
-                        "href": "https://api.w.org/{rel}",
-                        "templated": true
-                    }
-                ]
+                "tags": [],
+                "_links": {
+                    "self": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/1"
+                        }
+                    ],
+                    "collection": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts"
+                        }
+                    ],
+                    "about": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/types/post"
+                        }
+                    ],
+                    "author": [
+                        {
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/users/1"
+                        }
+                    ],
+                    "replies": [
+                        {
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/comments?post=1"
+                        }
+                    ],
+                    "version-history": [
+                        {
+                            "count": 0,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/posts/1/revisions"
+                        }
+                    ],
+                    "wp:attachment": [
+                        {
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/media?parent=1"
+                        }
+                    ],
+                    "wp:term": [
+                        {
+                            "taxonomy": "category",
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/categories?post=1"
+                        },
+                        {
+                            "taxonomy": "post_tag",
+                            "embeddable": true,
+                            "href": "https://dev-cf-graphql.pantheonsite.io/wp-json/wp/v2/tags?post=1"
+                        }
+                    ],
+                    "curies": [
+                        {
+                            "name": "wp",
+                            "href": "https://api.w.org/{rel}",
+                            "templated": true
+                        }
+                    ]
+                }
             }
-        },
-        "revalidate": 28800
+        ]
     }
 }</script>
 <script src="/_flareact/static/mMY5cUVI3HsBwKJBGxlcI/_buildManifest.js"></script>
@@ -144,6 +231,6 @@
 <script src="/_flareact/static/framework.a87d8c9398a1503a72be.js"></script>
 <script src="/_flareact/static/commons.c8563cd67c539032a53f.js"></script>
 <script src="/_flareact/static/pages/_app.f2c7759bc3c14ece298b.js"></script>
-<script src="/_flareact/static/pages/posts/[slug].71e07845c66fbdb8562a.js"></script>
+<script src="/_flareact/static/pages/index.b272eeaa555d311922e0.js"></script>
 </body>
 </html>
